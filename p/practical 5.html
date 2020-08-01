@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE MAP</title>
+    <style>
+        div
+        {   text-align: center;
+            
+        }
+        body
+        {
+            background-color: lightgrey;
+        }
+        h2
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color: red;">
+        Pratical_5: Create a Web-Page showing the use of Image-Map in the Web Application. 
+    </h3>
+    <div>
+        <img src="../img/Practical-5_A.JPG" alt=""
+        width="1200"
+        height="81"
+        usemap="#mapmenu">
+        <map name="mapmenu">
+            <area shape="rect" coords="13,9,128,70" href="../index.html" alt="">
+            <area shape="rect" coords="135,9,326,70" href="practical1.html" alt="practical-1">
+            <area shape="rect" coords="332,9,545,70" href="practical2.html" alt="practical-2">
+            <area shape="rect" coords="551,9,755,70" href="practical3.html" alt="practical-3">
+            <area shape="rect" coords="760,9,970,70" href="practical4.html" alt="practical-4">
+            <area shape="rect" coords="975,9,1185,70" href="#" alt="practical-5">
+        </map>
+    </div>
+    <div >
+        <h2 >Introduction to Front-End Technologies</h2>
+        <img src="Practical-5.jpg"
+        width = "400"
+        height="350"
+        alt=""
+        usemap="#map"/>
+
+        <map name="map">
+            <area shape="rect" coords="18,7,172,165" href="../img/image-18.png 5A.html" alt="HTML PAGE">
+            <area shape="circle" coords="287,99,97" href="../img/cssimage.jpg" alt="">
+            <area shape="rect" coords="24,197,170,337" href="../img/java_script.jpg" alt="">
+            <area shape="poly" coords="231,223,288,202,346,223,337,300,288,328,239,301" href="../img/bootstrap.jpg" alt="">
+        </map>
+        <p style="color: red;">
+            Click on the any part of image to know About these technologies
+        </p>
+    </div>
+</body>
+</html>
