@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical-7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container
+        {
+            
+            width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }        
+        #header
+        {
+           background-color: grey;
+           height: 70px;
+           margin-bottom: 15px; 
+           
+           color: white;
+           
+           display: flex ;
+           justify-content: center;
+           align-items: center;
+        }        
+        #banner
+        {
+            height: 380px;
+            margin-bottom: 15px;
+            
+            color: white;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+           align-items: center;
+        }
+        #circle-container
+        {
+            width: 100%;
+            margin: 15px auto;
+        }
+        #circle-container::after
+        {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #circle
+        {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            float:left;
+            margin: 15px 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+
+        }
+        #left-side
+        {
+            width: 50%;
+            height: 330px;
+            background-color: gray;
+            float: left;
+            color: white;
+            margin-top: 15px;
+            display: flex ;
+           justify-content: center;
+           align-items: center;
+        }
+        #right-side
+        {
+            width: 48%;
+            height: 350px;
+            float: right;
+            margin-top: 15px;
+        }
+        #block
+        {
+            width: 100%;
+            height: 100px;
+            background-color: brown;
+            margin-bottom: 15px;
+           
+           color: white;
+           
+           display: flex ;
+           justify-content: center;
+           align-items: center;            
+        }
+        #sec2-container
+        {
+            width: 100%;
+            margin: 15px auto;
+        }
+        #sec2-container::after
+        {
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .h1{
+            text-align: center;
+        }
+        #box-container
+        {
+            width: 100%;
+            margin: 15px auto;
+        }
+        #box-container::after
+        {
+            content:'';
+            display: block;
+            clear: both;
+        }
+
+        #box{
+            width: 20%;
+            height: 250px;
+            padding: 10px;
+            background-color:red;
+            
+            float: left;
+            margin:15px 20px;
+            
+        }
+        #footer
+        {
+            background-color:plum;
+           height: 70px;
+            margin-top: 15px;
+           
+           color: white;
+           
+           display: flex ;
+           justify-content: center;
+           align-items: center;
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header"><h2>Header</h2></div>
+        <div id="banner"><h2>Banner</h2></div>
+        <div id="circle-container" class="h1">
+            <h1>Section-1</h1>
+            <div id="circle"><img src="" alt=""/></div>
+            <div id="circle"><img src="" alt=""/></div>
+            <div id="circle"><img src="" alt=""/></div>
+            <div id="circle"><img src="" alt=""/></div>
+        </div>
+        <div id="sec2-container" class="h1"><h1>Section-2</h1>
+        <div id="left-side"><h2>Main Content</h2></div>
+        <div id="right-side">
+            <div id="block"><h2>Article-1</h2></div>
+            <div id="block"><h2>Article-2</h2></div>
+            <div id="block"><h2>Article-3</h2></div>
+        </div>
+        </div>
+        <div id="sec3-container" class="h1"><h1>Section-3</h1>
+            <div id="box-container">
+            <div id="box"></div>
+            <div id="box"></div>
+            <div id="box"></div>
+            <div id="box"></div>
+            </div>    
+        </div>
+        <div class="h1"><h1>Section-4</h1></div>
+        <div id="footer"><h2>footer</h2></div>
+    </div>    
+</body>
+</html>
