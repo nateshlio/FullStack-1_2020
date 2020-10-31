@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            background-color: rgb(189, 230, 243);
+        }
+        button{
+            margin: 90px;
+            height: 10vh;
+            width: 5vw;
+            font-size: 2rem;
+        }
+        #reduce{
+            background-color: rgb(175, 43, 43);
+            color: rgb(189, 230, 243);
+        }
+        #increase{
+            background-color: green;
+            color: rgb(189, 230, 243);
+        }
+        h1{
+            text-align: center;
+        }
+        .counter{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .counter button{
+            display: inline-block;
+            margin: 150px;
+        }
+        .counter h1{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+        <br>
+        <h1>Counter</h1>
+    <div class="counter">
+        <button id="reduce" onclick="reduce()">-</button>
+        <h1 id="display">0</h1>
+        <button id="increase" onclick="increase()">+</button>
+    </div>
+    <script>
+        var count=0;
+        var d = document.getElementById("display");
+        function reduce(){
+            if(count <= 0){
+                // alert("Counter reached 0")
+                document.getElementById("reduce").disabled=true;
+                count = 0;
+            }
+            else{
+                count--;
+            }
+            console.log(count);
+            d.innerText = count;
+        }
+        function increase(){
+            count++;
+            if(count > 0){
+                document.getElementById("reduce").disabled=false;
+            }
+            console.log(count);
+            d.innerText = count;
+        }
+    </script>
+</body>
+</html>
